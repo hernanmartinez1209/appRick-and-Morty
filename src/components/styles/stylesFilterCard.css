@@ -27,6 +27,13 @@
     z-index: 8000;
    }     
 }
+@media (min-width: 1260px) {
+    .filter__card{
+        
+        right: 575px;
+        z-index: 8000;
+       } 
+}
 @media (min-width: 1340px) { 
     .filter__card{
         padding:relative;
