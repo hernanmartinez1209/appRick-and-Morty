@@ -94,17 +94,17 @@ function App() {
           />
         </form>
      {/*INTENTO DE PAGUINACION
-         <ul className="pagination justify-content-center">
+         <ul >
             {paguina.prev ? (
-              <li className="page-item">
-                <button className="page-link" onClick={handlePreviousPage}>
+              <li>
+                <button  onClick={handlePreviousPage}>
                   Previous
                 </button>
               </li>
             ) : null}
             {paguina.next ? (
-              <li className="page-item">
-                <button className="page-link" onClick={handleNextPage}>
+              <li >
+                <button onClick={handleNextPage}>
                   Next
                 </button>
               </li>
