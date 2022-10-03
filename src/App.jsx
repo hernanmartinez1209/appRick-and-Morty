@@ -1,5 +1,5 @@
 
-import axios from 'axios'
+import axios, { Axios } from 'axios'
 import { useEffect, useState } from 'react'
 import './App.css'
 import CardResident from './components/CardResident'
@@ -19,6 +19,8 @@ function App() {
   const [suggestedList, setSuggestedList] = useState()
   // Para indicar si es que hay un error
   const [hasError, setHasError] = useState(false)
+  //para la paguinacion
+  const[paguina ,setPaguina] = useState()
 
   useEffect(() => {
     let id = getRandomNumber()
@@ -57,6 +59,24 @@ function App() {
     }
   }
   console.log(suggestedList)
+  //INTENTO DE PAGUINACION
+  // useEffect(() => {
+  // const PAGUINSCIOURL = 'https://rickandmortyapi.com/api/character'
+  // axios.get(PAGUINSCIOURL)
+  // .then(res => setPaguina(res.data?.info))
+  // .catch(err=>console.log(err))
+  // }, [])
+  
+  // const handleNextPage = () => {
+  //   PAGUINSCIOURL(paguina.next);
+  //   window.scrollTo(0, 0);
+  // };
+
+  // const handlePreviousPage = () => {
+  //   PAGUINSCIOURL(paguina.prev);
+  //   window.scrollTo(0, 0);
+  // };
+  
   return (
     <div className="App">
       <div className='banner__header'></div>
@@ -73,7 +93,23 @@ function App() {
             setSearchInput = {setSearchInput}
           />
         </form>
-      
+     {/*INTENTO DE PAGUINACION
+         <ul className="pagination justify-content-center">
+            {paguina.prev ? (
+              <li className="page-item">
+                <button className="page-link" onClick={handlePreviousPage}>
+                  Previous
+                </button>
+              </li>
+            ) : null}
+            {paguina.next ? (
+              <li className="page-item">
+                <button className="page-link" onClick={handleNextPage}>
+                  Next
+                </button>
+              </li>
+            ) : null}
+          </ul> */}
       {
         hasError?
           <ErrorScreen/>
