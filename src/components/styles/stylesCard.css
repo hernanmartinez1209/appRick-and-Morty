@@ -1,0 +1,132 @@
+/**/
+.card__principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    position: absolute;
+    width: 100%;
+    animation: spin 240s linear infinite;
+    background-size: 240px;
+    backface-visibility: visible;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==);
+    background-color: #1e234d;  
+}
+
+
+.card__resident {
+    width: 250px;
+    height: 495px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #1004ff6b;
+    overflow: hidden;
+}
+
+
+.card__resident:hover {
+    box-shadow: 1px 1px 15px #00D7FF;
+    cursor: pointer;
+    border: solid 3px rgba(0, 255, 119, 0.914);
+}
+
+.card_title_info {
+    font-weight: 600;
+    color: white;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.card__img {
+    height: 250px;
+    box-shadow: 1px 1px 2px #fff;
+}
+
+.card__status {
+    position: relative;
+    bottom: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 0 10px 10px 0;
+}
+
+.status_resident {
+    font-weight: 500;
+    position: relative;
+    left: 10px;
+    color: #fff;
+
+
+}
+
+.circle {
+    position: relative;
+    z-index: 5000;
+    bottom: 269px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.Dead {
+    background-color: red;
+
+}
+
+.unknown {
+    background-color: gray;
+
+}
+
+.Alive {
+    background-color: green;
+
+}
+
+.card__name {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+}
+
+.card__info {
+
+    width: 235px;
+    height: 130px;
+    position: relative;
+    left: 12px;
+    bottom: 20px;
+    border-radius: 10px;
+}
+.card__descripcion .cart__descripcion_list{
+    text-shadow: 3px 3px 15px black;
+     list-style: none;
+     color: #fff;
+     position: relative;
+     margin-top: 10px;
+     margin-bottom: 5px;
+     left: 10px;
+}
+
+
+/* .card__principal{
+    background-color: #06292E;
+    background-size:contain;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    height: 455px;
+    box-shadow: 1px 1px 10px #fff;
+    
+    
+}
+.card__principal:hover{
+    box-shadow: 1px 1px 10px #00D7FF;
+    cursor: pointer;
+} */
