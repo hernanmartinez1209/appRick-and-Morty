@@ -29,8 +29,8 @@
 }
 @media (min-width: 1340px) { 
     .filter__card{
-        padding:relative;
-        right: 425px;
+        position:relative;
+        right: 438px;
         width: 600px;
         top: 330px;
         z-index: 8000;
