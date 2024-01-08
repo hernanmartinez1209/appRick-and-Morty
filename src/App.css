@@ -4,11 +4,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Gloria Hallelujah', cursive;
-  max-width: 1664px;
+  /* max-width: 1664px; */
    
 }
 .App{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #1e234d;
   
